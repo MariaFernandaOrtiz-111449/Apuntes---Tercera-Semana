@@ -11,9 +11,9 @@ Los drivers se estudian como parte escencial
 
 ## 4. Definiciones
 
->🔑 *Motores DC:* Los motores DC o motores de corriente continua
+>🔑 *Motores DC:* Los motores DC o motores de corriente continua, son dispositivos electromecánicos capaces de convertir energía eléctrica en energía mecánica.
 >
->🔑 *Motores AC Asíncrono:* Los motores DC o motores de corriente continua
+>🔑 *Motores AC Asíncrono:* También conocidos como motores de inducción, son motores que funcionan con corriente alterna (AC), pero al ser asíncronos la velocidad de rotación no es igual a la velocidad del campo magnéticos del estator. 
 >
 >🔑 *Motores AC Síncrono:* Los motores DC o motores de corriente continua
 
