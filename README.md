@@ -22,15 +22,13 @@ Estos motores contienen las siguientes caracteristicas fisicas:
   
 En cuestiones industriales estos tipos de motores tienen varias aplicaciones, por lo que podemos resaltas las siguientes ventajas y desventajas:
 
-| **Ventajas**  | **Desventajas** |
-|---------------|-----------------|
-|• Control más simple
-• Driver de potencia más simple
-• Bajo precio en bajas capacidades
-• Alta eficiencia en aplicaciones pequeñas      | • Requiere mantenimiento e inspección periódicas
-• No se usa en entornos limpios debido a la abrasión de las escobillas
-• No se puede utilizar para altos torques
-• Sus imanes pueden sufrir desmagnetización con el tiempo              |
+| **Ventajas**                                 | **Desventajas**                                                           |
+|----------------------------------------------|---------------------------------------------------------------------------||
+| • Control más simple                         | • Requiere mantenimiento e inspección periódicas                          |
+| • Driver de potencia más simple              | • No se usa en entornos limpios debido a la abrasión de las escobillas    |
+| • Bajo precio en bajas capacidades           | • No se puede utilizar para altos torques                                 |
+| • Alta eficiencia en aplicaciones pequeñas   | • Sus imanes pueden sufrir desmagnetización con el tiempo                 |
+
 
 Tabla 1. Motores DC
 
