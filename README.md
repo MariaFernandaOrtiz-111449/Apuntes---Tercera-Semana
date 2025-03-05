@@ -12,8 +12,10 @@ Los drivers se estudian como parte escencial
 ## 4. Definiciones
 
 >🔑 *Motores DC:* Los motores DC o motores de corriente continua
->>🔑 *Motores AC Asíncrono:* Los motores DC o motores de corriente continua
->>>🔑 *Motores AC Síncrono:* Los motores DC o motores de corriente continua
+>
+>🔑 *Motores AC Asíncrono:* Los motores DC o motores de corriente continua
+>
+>🔑 *Motores AC Síncrono:* Los motores DC o motores de corriente continua
 
 ## 3. Subsecciones
 Las subsecciones pueden utilizarse para sub dividir ciertos temas que se tienen en clases, por ejemplo si se está trabajandolos conversores D/A, puede ser necesario subdividir este en circuito de resistencias ponderadas y circuito de escalera R2R. 
