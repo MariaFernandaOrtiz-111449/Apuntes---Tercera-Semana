@@ -23,36 +23,47 @@ Estos motores contienen las siguientes caracteristicas fisicas:
 En cuestiones industriales estos tipos de motores tienen varias aplicaciones, por lo que podemos resaltas las siguientes ventajas y desventajas:
 
 | **Ventajas**                                 | **Desventajas**                                                           |
-|----------------------------------------------|---------------------------------------------------------------------------||
+|----------------------------------------------|---------------------------------------------------------------------------|
 | • Control más simple                         | • Requiere mantenimiento e inspección periódicas                          |
 | • Driver de potencia más simple              | • No se usa en entornos limpios debido a la abrasión de las escobillas    |
 | • Bajo precio en bajas capacidades           | • No se puede utilizar para altos torques                                 |
 | • Alta eficiencia en aplicaciones pequeñas   | • Sus imanes pueden sufrir desmagnetización con el tiempo                 |
 
-
 Tabla 1. Motores DC
 
 ### 1.2. Motores Corriente Alterna - Asíncronos
-Estos motores contienen las siguientes caracteristicas fisicas:
-* Estator: El devanado inductor genera el campo magnético de excitación. Está compuesto por una corona de material ferromagnético (culata) con polos en su interior, alrededor de los cuales se enrollan los devanados de excitación que crean el campo magnético al circular corriente.
-* Rotor: Está constituido por una pieza cilíndrica ranurada de material ferromagnético, donde se aloja el devanado inducido cerrado en las ranuras del rotor.
-* Colector de Delgas: Es un conjunto de láminas de cobre aisladas entre sí que giran con el rotor y están conectadas eléctricamente a las bobinas del devanado inducido, permitiendo su conexión al exterior.
+El motor funciona mediante un campo magnético giratorio generado en el devanado inductor del estator. Al atravesar el devanado del rotor, induce fuerzas electromagnéticas que generan corrientes, provocando una reacción que hace girar el motor a una velocidad inferior a la de sincronismo.
   
 En cuestiones industriales estos tipos de motores tienen varias aplicaciones, por lo que podemos resaltas las siguientes ventajas y desventajas:
 
-| **Ventajas**  | **Desventajas** |
-|---------------|-----------------|
-|• Control más simple
-• Driver de potencia más simple
-• Bajo precio en bajas capacidades
-• Alta eficiencia en aplicaciones pequeñas      | • Requiere mantenimiento e inspección periódicas
-• No se usa en entornos limpios debido a la abrasión de las escobillas
-• No se puede utilizar para altos torques
-• Sus imanes pueden sufrir desmagnetización con el tiempo              |
+| **Ventajas**                                 | **Desventajas**                                                           |
+|----------------------------------------------|---------------------------------------------------------------------------|
+| • Poco mantenimiento                         | • Baja eficiencia en aplicaciones pequeñas                                |
+| • Excelente resistencia al entorno           |  Control más complicado que el DC por las señales de potencia             |
+| • Alta velocidad y alto torque               | • Puede sufrir cambios en sus características debido a temperaturas       |
+| • Alta eficiencia en aplicaciones grandes    |                                                                           |
+| • Estructura robusta                         |                                                                           |
 
 Tabla 2. Motores AC Asíncronicos
 
 ### 1.3. Motores Corriente Alterna - Síncronos
+Son máquinas eléctricas cuya velocidad de rotación depende de la frecuencia de la red AC, manteniendo igual velocidad entre el rotor y el campo magnético del estator. Los imanes de campo se montan en el rotor y se excitan con corriente continua, mientras que las bobinas de armadura, divididas en tres partes, se alimentan con corriente trifásica. Estos motores contienen las siguientes caracteristicas fisicas:
+* Estator:  Bobinado trifásico para producir el campo magnético giratorio.
+* Rotor: Tiene unos imanes o bobinas de excitación recorridas por una corriente continua. Gira a la velocidad del campo magnético.
+* Anillos Rozantes: Son anillos metálicos que sirven para alimentar de corriente continua al rotor.
+
+Se debe tener en cuenta que para iniciar el motor síncronico se debe aplica una señal alterna trifásica al estator y una señal DC al rotor, generando un campo magnético con polaridad. El campo del estator atrae al del rotor, provocando su giro a velocidad de sincronismo.
+  
+En cuestiones industriales estos tipos de motores tienen varias aplicaciones, por lo que podemos resaltas las siguientes ventajas y desventajas:
+
+| **Ventajas**                                     | **Desventajas**                                                           |
+|--------------------------------------------------|---------------------------------------------------------------------------|
+| • Muy poco mantenimiento                         | • Control de dificultad intermedia                                        |
+| • Excelente resistencia al entorno               | • Se requiere respuesta 1:1 entre driver motor                            |
+| • Compactos y ligeros                            | • Sus imanes pueden sufrir desmagnetización con el tiempo                 |
+| • Alta eficiencia en todo tipo de aplicaciones   |                                                                           |
+
+Tabla 3. Motores AC Síncronicos
 
 ## 2. SENSORES
 Se analizarán algunos tipos de sensores que existen, especialmente los encoder u otros sensores que nos permitan hacer mediciones de pulsos de un motor.
