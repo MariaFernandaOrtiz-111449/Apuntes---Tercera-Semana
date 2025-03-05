@@ -124,6 +124,10 @@ El manejo del driver se realiza mediante PWM (modulación por ancho de pulso), e
 
 ![](https://github.com/MariaFernandaOrtiz-111449/Apuntes---Tercera-Semana/blob/19f1970097cd354a2adfe8c3de00d11f888ff097/parametros.jpg)
 
+![](https://github.com/MariaFernandaOrtiz-111449/Apuntes---Tercera-Semana/blob/6272ebc703a4665d498ee1e5b2a2bb38e9ef1e22/datos%20iniciales.jpg)
+
+
+
 
 ## 5. Conclusiones
 Los motores eléctricos, junto con los sensores y drivers, forman la base de innumerables aplicaciones industriales y tecnológicas. Su correcto funcionamiento depende de una integración efectiva de los diferentes componentes, desde la generación del movimiento hasta su regulación mediante señales de control y retroalimentación.
