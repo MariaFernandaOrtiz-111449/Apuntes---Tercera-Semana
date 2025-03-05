@@ -2,6 +2,8 @@
 Apuntes control de movimiento - Primer corte-Tercera Semana
 # MOTORES, SENSORES Y DRIVERS
 En esta clase, se habló de los tipos de motores existente en la industria, las diferencias entre sí y las características partículares de cada uno. Adicionalmente como desde SimScape - Matlab podemos hacer una validación de modelo del motor con el que queramos trabajar, esto desde ciertos parametros que nos entregan los fabricantes. 
+Para controlar su operación, los drivers actúan como amplificadores, convirtiendo señales de control en señales de alta potencia para alimentar los motores. En la industria, es común el uso de PWM (modulación por ancho de pulso) como método eficiente de control.
+Además, los sistemas de motores requieren sensores para garantizar precisión en su operación. Dispositivos como encoders y resolvers permiten medir la posición, velocidad y dirección del movimiento, mientras que otros sensores, como los de efecto Hall o shunt, se emplean para medir corriente y, por ende, inferir el torque. En los servomecanismos, la combinación de sensores, controladores y drivers asegura un movimiento preciso y eficiente.
 
 ## 1. MOTORES
 Son dispositivso que convierten la energía eléctrica en energía mecánica a través de la interacción de campos magnéticos, esto mediante el paso de corriente eléctrica por un devanado, generando un campo magnético que induce el movimiento de un rotor. Se utilizan ampliamente en maquinaria industrial, electrodomésticos, vehículos eléctricos y sistemas automatizados, debido a su eficiencia, precisión y facilidad de control. 
@@ -67,9 +69,14 @@ Tabla 3. Motores AC Síncronicos
 
 ### 1.4. Servomotores
 * Modelo por corriente de armadura
-Parte Eléctrica:   $\upsilon a= La*Ia + Ra*Ia + Vb$
-Parte Magnética:   $Tm = ( Ka*Kc*Ic )*Ia( t ) = K\tau *Ia( t )$    ,      $Vb = Ke* \omega$     ,       $Tm = Tc + Tp$
-Parte Mecánica:    $J*\frac{\partial^2 \theta }{\partial t^2  } + b*\frac{\mathrm{d} \theta }{\mathrm{d} t} + R\theta = \tau ( t )$
+Parte Eléctrica:
+ $\upsilon a= La*Ia + Ra*Ia + Vb$
+Parte Magnética:
+ $Tm = ( Ka*Kc*Ic )*Ia( t ) = K\tau *Ia( t )$
+$Vb = Ke* \omega$
+$Tm = Tc + Tp$
+Parte Mecánica:
+$J*\frac{\partial^2 \theta }{\partial t^2  } + b*\frac{\mathrm{d} \theta }{\mathrm{d} t} + R\theta = \tau ( t )$
 $La * \frac{\mathrm{d} ( \frac{J \theta   + b\theta  + K\theta }{K\tau } )}{\mathrm{d} t} + Ra * ( \frac{J \theta   + b\theta  + K\theta }{K\tau } ) + Ke \theta  = \upsilon a$
 
 ## 2. SENSORES
@@ -98,31 +105,37 @@ Comparandos ambos tipos de encoders, tenemos que:
 |Adicionales                |  Solamente se detectan pulsos           | Hay un Código perforado en el encoder. El mas usado es gray                |
 
 ### 2.2. Resolver
+Un resolver es un sensor analógico de posición angular con un rotor y un estator embobinados. Su funcionamiento es similar al de un transformador, donde la amplitud inducida en el rotor varía según la posición relativa. Existen modelos con y sin escobillas.
+* **Voltajes del resolver**: entre 2V RMS y 40V RMS.  
+* **Frecuencia de operación**: 50 Hz a 20 kHz.  
+* **Relación de transformación**: 0.2 V/V a 1 V/V.
 
-## 3. DRIVERS
-Los drivers se estudian como parte escencial
+### 2.3. Medición de Torque
+torque se infiere a partir de la corriente, debido a su relación aproximadamente lineal.   
+* **Shunt**: Usa una pequeña resistencia para medir voltaje y aplicar la ley de Ohm.  
+* **Efecto Hall**: Detecta cambios en el campo magnético y, por la ley de Faraday, permite obtener la corriente.
 
+## 3. DRIVERS DE POTENCIA
+Un driver es un amplificador que convierte señales de control de baja potencia en señales de alta potencia (voltaje y/o corriente) para alimentar actuadores como motores, por lo que también se le conoce como amplificador. Cada eje requiere su propio driver y controlador. En los servomotores modernos, el controlador gestiona la retroalimentación de posición y velocidad, mientras que el driver maneja la retroalimentación de corriente.
+El manejo del driver se realiza mediante PWM (modulación por ancho de pulso), el estándar industrial para motores DC y AC, debido a su alta eficiencia. Algunos de los ejemplos de drivers de potencia que se pueden encontrar en el mercado, y que son bastante usados son:
 
-## 6. Figuras
-Todas las figuras que incluya deben ser generadas por ustedes, **no utilizar las figuras de las presentaciones**. Para incluir figuras puede seguir los siguientes pasos:
-* Primero escribimos ![]().
-* Después escribimos, dentro de los corchetes, el texto alternativo. Este es opcional y solo entra en acción cuando no se puede cargar la imagen correctamente.
-* Después escribimos, dentro de los paréntesis, la ubicación del archivo (ya sea una url o una ubicación dentro de algun folder local). Se recomienda poner las imágenes en una carpeta que se llame imágenes dentro del repositorio github para que no tengan problemas al cargar las imágenes.
+* Puente H
+* L293 y L298 (AN240/1288)
 
-💡**Ejemplo 2:**
-
-![Figura de prueba](images/plantilla/Captura2.PNG)
-
-Figura 1. Figura de prueba
-
-Incluya la respectiva etiqueta a modo de descripción de la figura y mantenga numeración consecutiva para todas las figuras de la clase.
-
-
-## 9. Ejercicios
+## 4. Ejercicios
 Deben agregar 2 ejercicios con su respectiva solución, referentes a los temas tratados en cada una de las clases. Para agregar estos, utilice la etiqueta #, es decir como un nuevo título dentro de la clase con la palabra 'Ejercicios'. Cada uno de los ejercicios debe estar numerado y con su respectiva solución inmediatamente despues del enunciado. Antes del subtitulo de cada ejercicio incluya el emoji 📚
 
-## 10. Conclusiones
-Agregue unas breves conclusiones sobre los temas trabajados en cada clase, puede ser a modo de resumen de lo trabajado o a indicando lo aprendido en cada clase
+## 5. Conclusiones
+Los motores eléctricos, junto con los sensores y drivers, forman la base de innumerables aplicaciones industriales y tecnológicas. Su correcto funcionamiento depende de una integración efectiva de los diferentes componentes, desde la generación del movimiento hasta su regulación mediante señales de control y retroalimentación.
+El uso de tecnologías como PWM en los drivers y la incorporación de sensores de posición y corriente han permitido aumentar la eficiencia y precisión de los sistemas de automatización. Comprender estos conceptos es esencial para diseñar y optimizar motores en diversas aplicaciones, desde robótica hasta maquinaria industrial, garantizando un desempeño confiable y eficiente.
 
-## 11. Referencias
-Agregue un subtítulo al final donde pueda poner todas las referencias consultadas incluyendo el origen o fuente de los ejercicios planteados. Tambien dentro del texto referencie los textos o artículos consultados y las figuras y tablas dentro de la explicación de las mismas.
+## 6. Referencias
+* CHAPMAN. 2005. Maquinas eléctricas. Madrid: McGraw-Hill Interamericana
+* LANGSDORF. 1968. Principios de las maquinas de corriente continua. McGrawHill
+* SERRANO IRIBARNEGARAY. 1989: Fundamentos de maquinas eléctricas rotativas. Marcombo.
+* https://www.swe.siemens.com/spain/web/es/industry/drive_tech/variadores /Pages/Variadores.aspx
+* https://www.areatecnologia.com/electricidad/motor-trifasico.html
+* https://www.areatecnologia.com/electricidad/motores-corrientecontinua.html
+
+
+  
