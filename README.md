@@ -96,7 +96,7 @@ Comparandos ambos tipos de encoders, tenemos que:
 | Salida                    | Salida aumenta incrementalmente         | Hay posiciones absolutas en una revolución                                |
 | Reinicialización          | Operación de retorno durante encendido  | No require ninguna operación de retorno ya que se sabe siempre su posición dentro de una revolución   |
 | Precio                    | Bajo                                    |Alto                                                                        |
-| Estructura                | ![Figura de prueba](images/plantilla/[Captura2.PNG](https://www.servomotorsadjust.com/wp-content/uploads/2020/05/Captura-de-pantalla-2020-05-15-a-las-11.34.13.png.webp))  |  ![Figura de prueba](images/plantilla/Captura2.PNG)            |
+| Estructura                | ![Figura de prueba](images/plantilla/imagen1)  |  ![Figura de prueba](images/plantilla/Captura2.PNG)            |
 |Adicionales                |  Solamente se detectan pulsos           | Hay un Código perforado en el encoder. El mas usado es gray                |
 
 ### 2.2. Resolver
