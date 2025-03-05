@@ -96,7 +96,7 @@ Comparandos ambos tipos de encoders, tenemos que:
 | Salida                    | Salida aumenta incrementalmente         | Hay posiciones absolutas en una revolución                                |
 | Reinicialización          | Operación de retorno durante encendido  | No require ninguna operación de retorno ya que se sabe siempre su posición dentro de una revolución   |
 | Precio                    | Bajo                                    |Alto                                                                        |
-| Estructura                | ![](https://github.com/MariaFernandaOrtiz-111449/Apuntes---Tercera-Semana/blob/7c772e8d44d86a24e2e5148ac6cf6bbda825b5d9/Encoder%20incremental.png)  |  ![]([images/plantilla/Captura2.PNG](https://github.com/MariaFernandaOrtiz-111449/Apuntes---Tercera-Semana/blob/01cca168565ef1177d1d756b0280f06156f0ce6e/Encoder%20Absoluto.jpeg))            |
+| Estructura                | ![](https://github.com/MariaFernandaOrtiz-111449/Apuntes---Tercera-Semana/blob/7c772e8d44d86a24e2e5148ac6cf6bbda825b5d9/Encoder%20incremental.png)  |  ![](https://github.com/MariaFernandaOrtiz-111449/Apuntes---Tercera-Semana/blob/b67c06e9965e10d66c7d25e072653e2fdb2df51d/Encoder%20Absoluto.png)            |
 |Adicionales                |  Solamente se detectan pulsos           | Hay un Código perforado en el encoder. El mas usado es gray                |
 
 ### 2.2. Resolver
