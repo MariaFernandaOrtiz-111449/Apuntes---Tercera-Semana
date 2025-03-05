@@ -69,14 +69,9 @@ Tabla 3. Motores AC Síncronicos
 
 ### 1.4. Servomotores
 * Modelo por corriente de armadura
-Parte Eléctrica:
- $\upsilon a= La*Ia + Ra*Ia + Vb$
-Parte Magnética:
- $Tm = ( Ka*Kc*Ic )*Ia( t ) = K\tau *Ia( t )$
-$Vb = Ke* \omega$
-$Tm = Tc + Tp$
-Parte Mecánica:
-$J*\frac{\partial^2 \theta }{\partial t^2  } + b*\frac{\mathrm{d} \theta }{\mathrm{d} t} + R\theta = \tau ( t )$
+Parte Eléctrica: $\upsilon a= La*Ia + Ra*Ia + Vb$
+Parte Magnética: $Tm = ( Ka*Kc*Ic )*Ia( t ) = K\tau *Ia( t )$  $Vb = Ke* \omega$  $Tm = Tc + Tp$
+Parte Mecánica: $J*\frac{\partial^2 \theta }{\partial t^2  } + b*\frac{\mathrm{d} \theta }{\mathrm{d} t} + R\theta = \tau ( t )$
 $La * \frac{\mathrm{d} ( \frac{J \theta   + b\theta  + K\theta }{K\tau } )}{\mathrm{d} t} + Ra * ( \frac{J \theta   + b\theta  + K\theta }{K\tau } ) + Ke \theta  = \upsilon a$
 
 ## 2. SENSORES
