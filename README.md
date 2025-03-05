@@ -4,7 +4,7 @@ Apuntes control de movimiento - Primer corte-Tercera Semana
 En esta clase, se habló de los tipos de motores existente en la industria, las diferencias entre sí y las características partículares de cada uno. Adicionalmente como desde SimScape - Matlab podemos hacer una validación de modelo del motor con el que queramos trabajar, esto desde ciertos parametros que nos entregan los fabricantes. 
 
 ## 1. MOTORES
-Se veran los tipos de motores que existen en la industria.
+Son dispositivso que convierten la energía eléctrica en energía mecánica a través de la interacción de campos magnéticos, esto mediante el paso de corriente eléctrica por un devanado, generando un campo magnético que induce el movimiento de un rotor. Se utilizan ampliamente en maquinaria industrial, electrodomésticos, vehículos eléctricos y sistemas automatizados, debido a su eficiencia, precisión y facilidad de control. 
 
 >🔑 *Motores DC:* Los motores DC o motores de corriente continua, son dispositivos electromecánicos capaces de convertir energía eléctrica en energía mecánica.
 >
@@ -67,10 +67,10 @@ Tabla 3. Motores AC Síncronicos
 
 ### 1.4. Servomotores
 * Modelo por corriente de armadura
-Parte Eléctrica:   \upsilon a= La*Ia + Ra*Ia + Vb
-Parte Magnética: Tm = ( Ka*Kc*Ic )*Ia( t ) = K\tau *Ia( t )    ,      Vb = Ke* \omega      ,       Tm = Tc + Tp
-Parte Mecánica: J*\frac{\partial^2 \theta }{\partial t^2  } + b*\frac{\mathrm{d} \theta }{\mathrm{d} t} + R\theta = \tau ( t )
-La * \frac{\mathrm{d} ( \frac{J \theta   + b\theta  + K\theta }{K\tau } )}{\mathrm{d} t} + Ra * ( \frac{J \theta   + b\theta  + K\theta }{K\tau } ) + Ke \theta  = \upsilon a
+Parte Eléctrica:   $\upsilon a= La*Ia + Ra*Ia + Vb$
+Parte Magnética:   $Tm = ( Ka*Kc*Ic )*Ia( t ) = K\tau *Ia( t )$    ,      $Vb = Ke* \omega$     ,       $Tm = Tc + Tp$
+Parte Mecánica:    $J*\frac{\partial^2 \theta }{\partial t^2  } + b*\frac{\mathrm{d} \theta }{\mathrm{d} t} + R\theta = \tau ( t )$
+$La * \frac{\mathrm{d} ( \frac{J \theta   + b\theta  + K\theta }{K\tau } )}{\mathrm{d} t} + Ra * ( \frac{J \theta   + b\theta  + K\theta }{K\tau } ) + Ke \theta  = \upsilon a$
 
 ## 2. SENSORES
 Un sensores un dispositivo que detecta cambios en una magnitud física o química, como temperatura, presión o luz, y los convierte en señales eléctricas para su procesamiento. Se usa en diversos sistemas para monitoreo y automatización.
@@ -82,6 +82,22 @@ Un sensores un dispositivo que detecta cambios en una magnitud física o químic
 Los servomecanismos utilizan sensores para medir corriente (torque), posición y velocidad, asegurando el cumplimiento de las rutinas de movimiento necesarias para diversas aplicaciones. Sin estas mediciones, no se puede garantizar un control preciso.
 Se analizarán algunos tipos de sensores que existen, especialmente los encoder u otros sensores que nos permitan hacer mediciones de pulsos de un motor.
 
+### 2.1. Encoders
+Generalmente son usados para medir tanto la posición como la velocidad del eje de cualquier tipo de motor.
+* Encoders Absolutos: Tienen un Código digital de posición absoluta para una sola revolución y un contador de revoluciones.
+* Encoders Incrementales: Generan un número específico de pulsos por unidad de longitud de movimiento lineal.
+
+Comparandos ambos tipos de encoders, tenemos que:
+
+| **Elemento**              | **Encoder Incremental**                 |  **Encoder Absoluto**                                                     |
+|---------------------------|-----------------------------------------|---------------------------------------------------------------------------|
+| Salida                    | Salida aumenta incrementalmente         | Hay posiciones absolutas en una revolución                                |
+| Reinicialización          | Operación de retorno durante encendido  | No require ninguna operación de retorno ya que se sabe siempre su posición dentro de una revolución   |
+| Precio                    | Bajo                                    |Alto                                                                        |
+| Estructura                | ![Figura de prueba](images/plantilla/Captura2.PNG)  |  ![Figura de prueba](images/plantilla/Captura2.PNG)            |
+|Adicionales                |  Solamente se detectan pulsos           | Hay un Código perforado en el encoder. El mas usado es gray                |
+
+### 2.2. Resolver
 
 ## 3. DRIVERS
 Los drivers se estudian como parte escencial
