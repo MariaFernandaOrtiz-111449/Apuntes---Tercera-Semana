@@ -1,13 +1,19 @@
-# Apuntes---Tercera-Semana
-Apuntes control de movimiento primer corte, Tercera Semana
-# Titulo de la clase 
-El título de cada clase, correspondiente al tema general que se trabaje en clase. Siempre después de cada título de clase, redactar una breve introducción (mínimo un párrafo) que de una mirada general al tema
-## 1. Subtítulos
-Agregue todos los subtítulos que considere necesarios para estructurar el contenido de la clase. Es importante que considere jerarquías de los temas para definir el orden de estos subtítulos. Cada subtítulo debe ir numerado como una sección, de la manera en que lo presenta esta plantilla
+# Apuntes-Tercera-Semana
+Apuntes control de movimiento - Primer corte-Tercera Semana
+# MOTORES, SENSORES Y DRIVERS
+En esta clase, se habló de los tipos de motores existente en la industria, las diferencias entre sí y las características partículares de cada uno. Adicionalmente como desde SimScape - Matlab podemos hacer una validación de modelo del motor con el que queramos trabajar, esto desde ciertos parametros que nos entregan los fabricantes. 
+## 1. MOTORES
+Se veran los tipos de motores que existen en la industria.
+## 2. SENSORES
+Se analizarán algunos tipos de sensores que existen, especialmente los encoder u otros sensores que nos permitan hacer mediciones de pulsos de un motor.
+## 3. DRIVERS
+Los drivers se estudian como parte escencial
 
-## 2. Definiciones
-Utilice el símbolo '>' para crear bloques de texto. En la presente plantilla estas cajas están reservadas para resaltar las definiciones, las cuales deben ser breves, y la palabra o frase que se está definiendo debe estar en letra itálica. El inicio del bloque de texto debe realizarse con el emoji 🔑 .
->🔑 *Definición:* descripción precisa y clara del significado de una palabra, término, concepto o fenómeno. Es una explicación que establece los límites y el alcance de aquello que se está definiendo, aclarando su naturaleza, características esenciales y, en algunos casos, su relación con otros conceptos.
+## 4. Definiciones
+
+>🔑 *Motores DC:* Los motores DC o motores de corriente continua
+>🔑 *Motores AC Asíncrono:* Los motores DC o motores de corriente continua
+>🔑 *Motores AC Síncrono:* Los motores DC o motores de corriente continua
 
 ## 3. Subsecciones
 Las subsecciones pueden utilizarse para sub dividir ciertos temas que se tienen en clases, por ejemplo si se está trabajandolos conversores D/A, puede ser necesario subdividir este en circuito de resistencias ponderadas y circuito de escalera R2R. 
